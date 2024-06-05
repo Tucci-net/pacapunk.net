@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLine.astro';
+
+import'../styles/myStyles.css'
+
+const pageTitle= "Homepage"
+const professions = ['designer','drawer','punk rocker']
+---
+
+<BaseLayout pageTitle={pageTitle}}>
+
+	<h1>All About Paca :)</h1>
+<h2>Hi! I am Tanner Tucci, </h2>
+<h2>I am a</h2>
+<ul>
+    {
+        proffesions.map( job =>
+            <li>{job}</li>
+        )
+    }
+</ul>
+<p> explores game design, cyber security, and tech communication, while also engaging in indie development and punk rock music. I am Proficient in programming and Adobe Creative Suite, I aspire to join major game studios to help close the gap of artistry and technology with an intricate tech prowess, and a drive for innovation in my career.</p>   
+
+</BaseLayout>
