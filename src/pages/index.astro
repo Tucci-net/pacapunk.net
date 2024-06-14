@@ -7,8 +7,36 @@ const pageTitle= "Homepage"
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+	<img id="Logo" src="src/assets/Pacalogo.png" height="100px" alt="Paca Designs">
 
-	<img src="src/assets/wizard-beer-wizard.gif" alt="">
-<p>With Me and My Owls.</p>
+	<style>
+		.cards {
+		  display: flex;
+		  flex-wrap: wrap;
+		  align-items: flex-start;
+		  flex-direction: row;
+		}
+		.cards img {
+		  margin: 10px;
+		  border:  antiquewhite;
+		  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+		  max-width: 13vw;
+		}
+	  </style>
+	  <main class="cards">
+
+
+		<img src="/public/assets/FrontPagey2.png" alt="Switch Board">
+		<img src="/public/assets/FrontPagey.png" alt="Switch Board">
+		<img src="/public/assets/FrontPagey3.png" alt="Old Soundboard">
+
+		<img src="/public/assets/NYMockUp.png" alt="New Yorker Mockup>
+		<img src="/public/assets/VanProj.jpg" alt="Sample photo">
+
+		<img src="/public/assets/EvilDeadPoster.png" alt="Sample photo">
+				<img src="/public/assets/VanProj.jpg" alt="Sample photo">
+
+	  </main>
+
 
 </BaseLayout>
