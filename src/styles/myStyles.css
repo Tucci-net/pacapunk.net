@@ -1,8 +1,28 @@
-/* Diagnostic Styling */
-* {
+
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Underdog&display=swap");
+
+/* Diagnostic Styling Outline */
+/* * {
     outline: 2px dotted gray;
+} */
+
+:root{
+    --headingFont: "Underdog", cursive;
+--bodyFont: "Quicksand", sans-serif;
 }
 
+/* Type Styling */
+h1,h2,h3, a{
+    font-family: var(--headingFont);
+    color:antiquewhite;
+    }
+
+    p{
+        font-family: var(--bodyFont);
+        font-size: 1.2rem;
+        color: antiquewhite;
+    }
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1.25rem;
@@ -17,11 +37,41 @@ a:hover{
 html{
     background: #141416;
 }
+footer {
+    position: fixed;
+    height: 6.5rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    background:#0d0d0d;
+}
+footer a{
+    margin-right: 1rem;
+}
+footer h3{
+    padding-bottom: -2rem;
+}
+nav{
+text-align: center;
+}
 
+nav a{
+    margin-right: 1rem;
+}
 main {
 
-    width: 800px;
+    width: 900px;
     max-width: 90%;
     margin: auto;
 
+}
+
+img{
+    max-width: 450px;
+    padding-top: 1.5rem;
+}
+body{
+    padding-bottom: 6.25rem;
 }

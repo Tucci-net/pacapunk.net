@@ -1,9 +1,12 @@
 ---
 layout: ../../layouts/BlogPostLayout.astro
 title: 'Post One'
-date: 'January 1, 2024'
+date: 'June 13, 2024'
 ---
+# Graduation
 
+Well, It's Been 19 Years and a crazy time at that...
 
-How did you get here?
-The Hops. And the berries. With My Owls.
+![A Gif Of A Tired Emporer Palpatine](../../assets/worthikids-palpatine.gif)
+
+Gotta say, if you're In this corner of the site, Thanks!

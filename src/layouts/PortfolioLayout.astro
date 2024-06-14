@@ -1,17 +1,18 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-
+import BaseLayout from '../layouts/BaseLine.astro';
+import '../styles/folioStyles.css';
 const allProjects = await Astro.glob('../pages/projects/*.md');
 
 const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout>
-
     <img src={frontmatter.teaserimage} />
     <h1>{frontmatter.title}</h1>
     <p>Project completed on : {frontmatter.date}</p>
     
+
+
     <slot />
 
     <h2>See All Projects</h2>

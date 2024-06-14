@@ -1,13 +1,15 @@
 ---
-import BaseLayout from '../layouts/PortfolioLayout.astro';
+import BaseLayout from '../layouts/BaseLine.astro';
 
-import'../styles/myStyles.css'
+const pageTitle = "Portfolio";
 
-const pageTitle= "Portfolio"
+const allProjects = await Astro.glob('../pages/projects/*.md');
 ---
 
-<BaseLayout pageTitle={pageTitle}}>
+<BaseLayout pageTitle={pageTitle}>
+	
+	<h1>{pageTitle}</h1>
 
-<p>With Me and My Massive Folio.</p>
+    {allProjects.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
 
 </BaseLayout>

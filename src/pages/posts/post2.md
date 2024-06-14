@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogPostLayout.astro
-title: 'Post Two'
-date: 'August 14, 2004'
+title: 'More Posts...'
+date: 'TBD'
 ---
-HOLY SHIT POST 2 JUST DROPPED
+More here hopefully soon
 
-![image](../../assets/worthikids-palpatine.gif)
+When I got more to talk about
