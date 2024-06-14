@@ -2,7 +2,7 @@
 layout: ../../layouts/PortfolioLayout.astro
 title : 'Nueral Network Generative Skull'
 date : 'Decemeber 6th 2023'
-teaserimage : '/public/assets/GenSkull.png'
+teaserimage : 'assets/GenSkull.png'
 ---
 <style>
     main img{
