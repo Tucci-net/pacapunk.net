@@ -6,8 +6,18 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1.25rem;
+    color: antiquewhite;
 }
-  
+a {
+    color:  #8d1014;
+}
+a:hover{
+    color: #ce272d;
+}
+html{
+    background: #141416;
+}
+
 main {
 
     width: 800px;
