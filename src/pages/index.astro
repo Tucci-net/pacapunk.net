@@ -1,36 +1,33 @@
 ---
 import BaseLayout from '../layouts/BaseLine.astro';
 
-const pageTitle= "Homepage"
+const pageTitle = "Homepage";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<img id="Logo" src="assets/Pacalogo.png" height="100px" alt="Paca Designs">
+  <img id="Logo" src="assets/Pacalogo.png" height="100px" alt="Paca Designs">
 
+  <style>
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+    .cards img {
+      margin: 10px;
+      border: 2px solid antiquewhite; /* Added width and style */
+      box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+      max-width: 12vw;
+    }
+  </style>
 
-	<style>
-		.cards {
-		  display: flex;
-		  flex-wrap: wrap;
-		  align-items: flex-start;
-		  flex-direction: row;
-		}
-		.cards img {
-		  margin: 10px;
-		  border:  antiquewhite;
-		  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-		  max-width: 12vw;
-		}
-	  </style>
-	  <div class="cards">
-		<img src="assets/FrontPagey2.png" alt="Switch Board">
-		<img src="assets/FrontPagey.png" alt="Switch Board">
-		<img src="assets/FrontPagey3.png" alt="Old Soundboard">
-		<img src="assets/NYMockUp.png" alt="New Yorker Mockup">
-		<img src="assets/EvilDeadPoster.png" alt="Sample photo">
-				<img src="assets/VanProj.jpg" alt="Sample photo">
-
-	  </div>
-
-
+  <div class="cards">
+    <img src="assets/FrontPagey2.png" alt="Switch Board">
+    <img src="assets/FrontPagey.png" alt="Switch Board">
+    <img src="assets/FrontPagey3.png" alt="Old Soundboard">
+    <img src="assets/NYMockUp.png" alt="New Yorker Mockup">
+    <img src="assets/EvilDeadPoster.png" alt="Sample photo">
+    <img src="assets/VanProj.jpg" alt="Sample photo">
+  </div>
 </BaseLayout>
