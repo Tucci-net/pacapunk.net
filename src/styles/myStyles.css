@@ -1,13 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Underdog&display=swap");
 
-/* Diagnostic Styling Outline */
-/* * {
-    outline: 2px dotted gray;
-} */
-
 :root{
---headingFont: "Underdog", cursive;
---bodyFont: "Quicksand", sans-serif;
+--headingFont: 'Underdog', cursive;
+--bodyFont: 'Quicksand', sans-serif;
 }
 
 /* Type Styling */
