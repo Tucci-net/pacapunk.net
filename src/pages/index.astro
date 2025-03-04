@@ -1,33 +1,69 @@
 ---
 import BaseLayout from '../layouts/BaseLine.astro';
 
+import allProjects from './portfolio.astro';
 const pageTitle = "Homepage";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <img id="Logo" src="assets/Pacalogo.png" height="100px" alt="Paca Designs">
 
+
+
+  <div class="cards">
+    <a href="">
+      <img src="public/assets/Portfolio/FrontPagey2.png" alt="Switch Board">
+    </a>
+    <a href="">
+      <img src="public/assets/Portfolio/FrontPagey3.png" alt="Old Soundboard">
+    </a>
+    <a href="/projects/project-1">
+      <img src="public/assets/Portfolio/NYMockUp.png" alt="New Yorker Mock Up">
+    </a>
+    <a href="/projects/project-2">
+      <img src="public/assets/Portfolio/EvilDeadPoster.png" alt="Evil Dead Low Poly">
+    </a>
+    <a href="">
+      <img src="public/assets/Portfolio/FrontPagey.png" alt="RGB Rotor Light">
+    </a>
+    <a href="/projects/project-6">
+      <img src="public/assets/Portfolio/VanProj.jpg" alt="Paca 2023 Van Project">
+    </a>
+    <a href="">
+      <img src="public/assets/Portfolio/PacaAnim.gif" alt="">
+    </a>
+    <a href="">
+      <img src="public/assets/Portfolio/Desn100FNL.jpg" alt="">
+    </a>
+    <a href="">
+      <img src="public/assets/Portfolio/2.png" alt="">
+    </a>
+    <a href="">
+      <img src="public/assets/Portfolio/BugGang-01.jpg" alt="">
+    </a>
+    <a href="">
+      <img src="public/assets/Portfolio/littleThingsSticker.png" alt="">
+    </a>
+  </div>
+
   <style>
     .cards {
       display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      flex-direction: row;
+      flex-flow: column wrap;
+      align-content: space-between;
+      height: 900px;
     }
     .cards img {
-      margin: 10px;
-      border: 2px solid antiquewhite; /* Added width and style */
+      margin: 0.625rem;
+      border: 2px solid rgb(120, 26, 26); /* Added width and style */
       box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
       max-width: 12vw;
     }
-  </style>
 
-  <div class="cards">
-    <img src="assets/FrontPagey2.png" alt="Switch Board">
-    <img src="assets/FrontPagey.png" alt="Switch Board">
-    <img src="assets/FrontPagey3.png" alt="Old Soundboard">
-    <img src="assets/NYMockUp.png" alt="New Yorker Mockup">
-    <img src="assets/EvilDeadPoster.png" alt="Sample photo">
-    <img src="assets/VanProj.jpg" alt="Sample photo">
-  </div>
+
+
+
+
+  
+  </style>
 </BaseLayout>

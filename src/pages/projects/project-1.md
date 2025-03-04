@@ -2,7 +2,7 @@
 layout: ../../layouts/PortfolioLayout.astro
 title : 'New Yorker Mock Up Cover'
 date : 'October 20th 2022'
-teaserimage : '../../assets/NYMockUp.png'
+teaserimage : '../../assets/Portfolio/NYMockUp.png'
 
 ---
 
