@@ -9,3 +9,4 @@ After over 2 Years of working within the Audio Visual Scene at Eastern I was giv
 
 ![The Design of the Van](../../../public/assets/Portfolio/VanProjDes.png)
 
+![A Gif Of A Tired Emporer Palpatine](../../../public/assets/worthikids-palpatine.gif)
