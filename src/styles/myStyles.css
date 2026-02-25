@@ -81,9 +81,8 @@ nav.black .logo img{
     height: 60px;
 }
 nav > ul{
-    width: 80%;
     margin: 0 auto;
-    padding: 0;
+    padding: 0px;
     float: right;
 }
 nav > ul > li{
@@ -91,7 +90,7 @@ nav > ul > li{
     display: inline-block;
 }
 nav > ul > li > a:hover{
-    background: #f00;
+    background: #ce272d;
     color: #fff;
 }
 nav > ul > li > a{
@@ -102,6 +101,7 @@ nav > ul > li > a{
     padding: 5px 20px;
     transition: .5s;   
 }
+
 nav.black > ul > li > a{
     color: #fff;
     line-height: 60px;

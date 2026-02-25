@@ -11,5 +11,9 @@ const allProjects = await Astro.glob('../pages/projects/*.md');
 	<h1>{pageTitle}</h1>
 
     {allProjects.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
-
+<style>
+    body{
+        padding: 25px;
+    }
+</style>
 </BaseLayout>
