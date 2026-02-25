@@ -22,6 +22,13 @@ body {
     color: antiquewhite;
     padding-bottom: 6.25rem;
 }
+main {
+
+    width: 80vw;
+    max-width: 90%;
+    margin: auto;
+
+}
 a {
     color:  #8d1014;
 }
@@ -54,12 +61,6 @@ text-align: center;
 nav a{
     margin-right: 1rem;
 }
-main {
 
-    width: 1000px;
-    max-width: 90%;
-    margin: auto;
-
-}
 
 
