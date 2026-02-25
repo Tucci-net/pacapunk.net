@@ -54,13 +54,56 @@ footer a{
 footer h3{
     padding-bottom: -2rem;
 }
+
 nav{
-text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
 }
-
-nav a{
-    margin-right: 1rem;
+nav.black{
+    background: rgba(0,0,0,0.6);
+    height: 80px;
+    padding: 10px 50px;
 }
-
-
+nav .logo{
+    float: left;
+}
+nav .logo img{
+    height: 80px;
+    transition: .5s;
+}
+nav.black .logo img{
+    height: 60px;
+}
+nav > ul{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    float: right;
+}
+nav > ul > li{
+    list-style: none;
+    display: inline-block;
+}
+nav > ul > li > a:hover{
+    background: #f00;
+    color: #fff;
+}
+nav > ul > li > a{
+    color: #8d1014;
+    text-decoration: none;
+    text-transform: uppercase; /*for capitalisation of letters */
+    line-height: 80px;
+    padding: 5px 20px;
+    transition: .5s;   
+}
+nav.black > ul > li > a{
+    color: #fff;
+    line-height: 60px;
+}
 
