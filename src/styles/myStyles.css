@@ -5,17 +5,9 @@
 --bodyFont: 'Quicksand', sans-serif;
 }
 
-/* Type Styling */
-h1,h2,h3, a{
-    font-family: var(--headingFont);
-    color:antiquewhite;
-    }
-
-    p{
-        font-family: var(--bodyFont);
-        font-size: 1.2rem;
-        color: antiquewhite;
-    }
+html{
+    max-width: 2000px ;
+}
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1.25rem;
@@ -29,6 +21,18 @@ main {
     margin: auto;
 
 }
+/* Type Styling */
+h1,h2,h3, a{
+    font-family: var(--headingFont);
+    color:antiquewhite;
+    }
+
+    p{
+        font-family: var(--bodyFont);
+        font-size: 1.2rem;
+        color: antiquewhite;
+    }
+
 a {
     color:  #8d1014;
 }
