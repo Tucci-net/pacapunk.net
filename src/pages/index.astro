@@ -38,28 +38,54 @@ const pageTitle = "Homepage";
 
       <img src="/assets/Portfolio/BugGang-01.jpg" alt="">
 
-      <img src="/assets/Portfolio/littleThingsSticker.png" alt="">
   </div>
 
   <style>
     .cards {
-      display: flex;
-      flex-flow: column wrap;
-      align-content: space-between;
-      height: 56.25rem;
-      padding: 4rem;
-      margin-right: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 56.25rem;
+    padding: 4rem;
+    margin-right: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .cards img {
+    margin: 0.625rem;
+    border: 2px solid rgb(120, 26, 26);
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+    max-width: 10vw;
+  }
     }
-    /* Added width and style */
+
+
+ /* Mobile */
+  @media (max-width: 768px) {
+    .cards {
+      flex-flow: column nowrap;
+      align-content: center;
+      height: auto;
+      padding: 5rem 1rem 1rem;
+      align-items: center;
+    }
+
     .cards img {
-      margin: 0.625rem;
-      border: 2px solid rgb(120, 26, 26); 
-      box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
-      max-width: 12vw;
+      max-width: 80vw;
+      width: 80vw;
     }
 
+    .card-item {
+      width: 80vw;
+    }
 
-
+    .card-item::after {
+      font-size: 0.9rem;
+      inset: 0;
+    }
+  }
+</style>
 
 
   
