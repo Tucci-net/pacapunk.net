@@ -8,86 +8,52 @@ const pageTitle = "Homepage";
 <BaseLayout pageTitle={pageTitle} showIntro={true}>
   <div class="cards">
 
-      <img src="/assets/Portfolio/2.png" alt="Switch Board">
-
-      <img src="/assets/Portfolio/FrontPagey3.png" alt="Old Soundboard">
-
-      <img src="/assets/Portfolio/macish.png" alt="An Apple Website Recreation, with Tucci Flavour">
-  
-      <a href="/projects/project-1">
-      <img src="/assets/Portfolio/NYMockUp.png" alt="New Yorker Mock Up">
-    </a>
-  
-    <a href="/projects/project-2">
-      <img src="/assets/Portfolio/EvilDeadPoster.png" alt="Evil Dead Low Poly">
-    </a>
-      <img src="/assets/Portfolio/FrontPagey.png" alt="RGB Rotor Light">
-    <a href="/projects/project-6">
-      <img src="/assets/Portfolio/VanProj.jpg" alt="Paca 2023 Van Project">
-    </a>
-
-      <img src="/assets/Portfolio/tucciton.png" alt="An Ableton redux">
-
-      <img src="/assets/Portfolio/Backgroundsticker.jpg" alt="Sticker covered wallpaper">
-
-      <img src="/assets/Portfolio/PacaAnim.gif" alt="">
-
-      <img src="/assets/Portfolio/Desn100FNL.jpg" alt="">
-
-      <img src="/assets/Portfolio/2.png" alt="">
-
-      <img src="/assets/Portfolio/BugGang-01.jpg" alt="">
-
+     <div class="card-item" data-name="Frozen Skullie" data-desc="A college-age tattoo design">
+    <img src="/assets/Portfolio/2.png" alt="Skull Sticker" >
+  </div>
+      <div class="card-item"  data-name="Old Soundboard" data-desc="An early soundboard concept">
+    <img src="/assets/Portfolio/FrontPagey3.png" alt="Old Soundboard">
   </div>
 
-  <style>
-    .cards {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: space-between;
-    height: 56.25rem;
-    padding: 4rem;
-    margin-right: auto;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
+  <div class="card-item" data-name="Mac Redux" data-desc="An Apple website recreation with Tucci flavour">
+    <img src="/assets/Portfolio/macish.png" alt="Mac Recreation" >
+  </div>
 
-  .cards img {
-    margin: 0.625rem;
-    border: 2px solid rgb(120, 26, 26);
-    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
-    max-width: 10vw;
-  }
-    }
+  <a href="/projects/project-1" class="card-item" data-name="New Yorker" data-desc="A New Yorker magazine mock up">
+    <img src="/assets/Portfolio/NYMockUp.png" alt="New Yorker Mock Up" >
+  </a>
 
+  <a href="/projects/project-2" class="card-item" data-name="Evil Dead" data-desc="Low poly Evil Dead poster">
+    <img src="/assets/Portfolio/EvilDeadPoster.png" alt="Evil Dead Low Poly">
+  </a>
 
- /* Mobile */
-  @media (max-width: 768px) {
-    .cards {
-      flex-flow: column nowrap;
-      align-content: center;
-      height: auto;
-      padding: 5rem 1rem 1rem;
-      align-items: center;
-    }
+  <div class="card-item" data-name="RGB Rotor" data-desc="RGB rotor light concept">
+    <img src="/assets/Portfolio/FrontPagey.png" alt="RGB Rotor Light">
+  </div>
 
-    .cards img {
-      max-width: 80vw;
-      width: 80vw;
-    }
+  <a href="/projects/project-6" class="card-item" data-name="Van Project" data-desc="Paca 2023 van build project">
+    <img src="/assets/Portfolio/VanProj.jpg" alt="Paca 2023 Van Project" >
+  </a>
 
-    .card-item {
-      width: 80vw;
-    }
+  <div class="card-item" data-name="Tucciton" data-desc="An Ableton interface redux">
+    <img src="/assets/Portfolio/tucciton.png" alt="Ableton Redux" >
+  </div>
 
-    .card-item::after {
-      font-size: 0.9rem;
-      inset: 0;
-    }
-  }
-</style>
+  <div class="card-item" data-name="Sticker Wall" data-desc="Sticker covered wallpaper">
+    <img src="/assets/Portfolio/Backgroundsticker.jpg" alt="Sticker Wallpaper" >
+  </div>
 
+  <div class="card-item" data-name="Paca Anim" data-desc="A looping animation">
+    <img src="/assets/Portfolio/PacaAnim.gif" alt="Paca Animation">
+  </div>
 
-  
-  </style>
+  <div class="card-item" data-name="Knitting Factory Poster" data-desc="Final project, First compensated work from college!">
+    <img src="/assets/Portfolio/Desn100FNL.jpg" alt="Desn100 Final" >
+  </div>
+
+  <div class="card-item" data-name="Loot Bug" data-desc="Loot Bug Low Poly Rendering">
+    <img src="/assets/Portfolio/BugGang-01.jpg" alt="Bug Gang" >
+  </div>
+
+  </div>
 </BaseLayout>
