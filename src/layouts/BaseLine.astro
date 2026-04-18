@@ -3,7 +3,7 @@ import '../styles/myStyles.css'
 import Navigation from '../components/Navigation.astro';
 // import Footer from '../components/Footer.astro';
 const siteName = "Paca's Alley"
-const {pageTitle} = Astro.props;
+const {pageTitle, showIntro = false} = Astro.props;
 ---
 
 <html lang="en">
@@ -15,21 +15,28 @@ const {pageTitle} = Astro.props;
 		<title>{siteName} | {pageTitle}</title>
 	</head>
 	<body>
+		 <!-- INTRO OVERLAY -->
+  { showIntro && (
+  <div id="intro-overlay">
+    <div id="intro-content">
+      <div id="intro-name">
+        <span class="line">Paca's</span>
+        <span class="line">Alley</span>
+      </div>
+      <button id="enter-btn">Enter</button>
+    </div>
+  </div>
+)}
+		<!-- Main Page -->
         <main>
-
             <!-- Nav Component -->
             <Navigation />
-
             <!-- Astro Slot -->
 			<slot />
-
             </main>  
-
 		<!-- Client Side Scripts -->
 		<script>
-
 			import "../scripts/myScripts.js";
-
 		</script>
 	</body>
 </html>

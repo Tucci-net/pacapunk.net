@@ -15,7 +15,7 @@ body {
     padding-bottom: 6.25rem;
 }
 main {
-
+    padding-top: 2.604vw;
     width: 80vw;
     max-width: 90%;
     margin: auto;
@@ -110,4 +110,108 @@ nav.black > ul > li > a{
     color: #fff;
     line-height: 60px;
 }
+/* About mne data > ship to index */
+img[data-astro-cid-kh7btl4r][data-astro-cid-kh7btl4r]{
+width: 15.625vw;
+  display: block;
+  Margin: 0;
+  border-radius: 50%;
+  outline: 4px ridge #ce272d;
+  box-shadow: 0px 0px 106px 16px rgba(206,39,44,0.075);
+}
+/* Intro button/BTN */
+ #intro-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+  }
 
+  #intro-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  #intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  #intro-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  #intro-name .line {
+    display: block;
+    font-size: clamp(4rem, 12vw, 9rem);
+    color: #e8e0d0;
+    line-height: 1;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: revealLine 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  #intro-name .line:nth-child(1) { animation-delay: 0.2s; }
+  #intro-name .line:nth-child(2) { animation-delay: 0.5s; }
+
+  @keyframes revealLine {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  #intro-name::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: rgb(120, 26, 26);
+    margin-top: 1.25rem;
+    animation: expandLine 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;
+  }
+
+  @keyframes expandLine {
+    to { width: 100%; }
+  }
+
+  #enter-btn {
+    opacity: 0;
+    font-size: 0.85rem;
+    color: #e8e0d0;
+    background: transparent;
+    border: 1px solid rgb(120, 26, 26);
+    padding: 0.75rem 2.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    animation: fadeInBtn 0.6s ease 1.5s forwards;
+  }
+
+  #enter-btn:hover {
+    background: rgb(120, 26, 26);
+    color: #e8e0d0;
+  }
+
+  @keyframes fadeInBtn {
+    to { opacity: 1; }
+  }
+#main-site {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#main-site.visible {
+  opacity: 1;
+  visibility: visible;
+}
